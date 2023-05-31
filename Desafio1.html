@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">  
+    </head>
+
+    <body>
+
+        
+        <header>
+            <h1><img class="Logo" src="Logo.png" alt="Logo del encriptador"></h1>
+            <h2 class="titulo">Encriptador</h2>
+        </header>
+
+        <main>
+            
+            <section class="caja-texto">
+                <textarea class="entrada" cols="80%" rows="30%"  placeholder="Ingrese el texto aqui" required></textarea>
+                <div>
+                    <h3 class="texto-informativo">&#42Solo letras minusculas y sin acentos</h3>
+                </div>
+                <div class="botones">
+                    <button onclick="botonEncriptar()" class="botonEncriptar">Encriptar</button>
+                    <button onclick="botonDesencriptar()"class="botonDesencriptar">Desencriptar</button>
+                </div>
+            </section>
+
+            <section class="caja-salida">
+                <textarea  id="texto-encriptado" cols="80%" rows="30%" class="salida" ></textarea>
+                <div class="botonCopiar">
+                    <button class="copiar" onclick="copiar()">Copiar</button>
+                </div>
+            </section>
+                                                
+        </main>
+        
+        <footer>
+            <p class="copyright">&copy Copyright Brayan Arciniegas</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+
+</html>
