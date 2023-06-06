@@ -30,21 +30,23 @@ main{
     display: flex;
     background: #94d0b5;
     padding: 1%;
-    height: auto;
+    height: 800px;
 }
 
 
 
 .entrada{
-    height: 90%;
+    height: 700px;
     padding: 1%;
     text-transform: lowercase;
     border-radius: 3%;
     border: none;
-    background: none;
+    background: rgb(243, 255, 239);
     text-align: center;
     color: #000000;
     font-size: large;
+    position: static;
+    margin-right: 3%;
 }
 
 .entrada:focus{
@@ -52,22 +54,17 @@ main{
 }
 
 .texto-informativo{
-    padding: 2%;
+    padding: 1%;
     stroke: #000000;
+    font-weight: bold;
 }
 
 .botones{
     padding: 2%;    
 }
 
-.caja-salida{
-    padding: 1%;
-    width: 35%;
-    
-}
-
 .salida{
-    height: 90%;
+    height: 700px;
     border-radius: 3%;
     border: none;
     background-color: #264d3e;
@@ -78,6 +75,7 @@ main{
     padding: 1%;
     position:static;
     font-size: large;
+    margin-left: 3%;
 }
 
 .salida:focus{
@@ -121,7 +119,7 @@ main{
     cursor: pointer;
     height: 40px;
     width: 25%;
-    margin: auto;
+    margin-left: 10%;
     font-size: large;
     position: relative;
 }
